@@ -1,8 +1,4 @@
-// Netlify function for tasks API - ONLY for local development when backend is not available
-// When deployed to Netlify, this should NOT be used if you have a separate backend
-
 exports.handler = async (event, context) => {
-  // Return a message indicating this is only for local development
   return {
     statusCode: 200,
     headers: {
@@ -14,7 +10,7 @@ exports.handler = async (event, context) => {
       tasks: [
         {
           _id: '1',
-          title: 'Sample Task 1',
+          title: '1st task',
           description: 'This is a sample task',
           priority: 'Medium',
           status: 'Pending',
