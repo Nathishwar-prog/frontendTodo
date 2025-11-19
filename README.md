@@ -63,7 +63,7 @@ so that i create a two separate .env and .env.production files with correct API 
 
 ### 2. API Connection Issues
 Network Error and refused to connect when frontend couldn't connect to backend
-so i then i realise must run the both server on different port so i use 5000 for frontend and 5001 for backend
+so i then i realise must run the both server on different port so i use 5173 for frontend and 5000 for backend
 
 ### 3. Netlify Functions Conflict
 when i hoseted frontend on netify but Netlify functions were intercepting API requests instead of letting them reach the Render backend
