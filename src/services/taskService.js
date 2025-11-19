@@ -1,4 +1,3 @@
-// services/taskService.js
 import API from '../api';
 
 export const fetchTasks = async (params) => {
@@ -41,15 +40,6 @@ export const updateTask = async (id, payload) => {
   }
 };
 
-export const patchTask = async (id, payload) => {
-  try {
-    const response = await API.patch(`/tasks/${id}`, payload);
-    return response.data;
-  } catch (error) {
-    console.error('Error patching task:', error);
-    throw error;
-  }
-};
 
 export const deleteTask = async (id) => {
   try {
